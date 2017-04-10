@@ -3,16 +3,14 @@
 # 2) MeterToLengthConverter.Feet.convert(2.72)
 # 3) MeterToLengthConverter.Inch.convert(2.72)
 # 4) Press ctrl-c twice to exit Interactive Elixir
-defmodule MeterToLengthConverter do
-  defmodule Feet do
-    def convert(m) do
-      m * 3.28084
-    end
+defmodule MeterToLengthConverter.Feet do
+  def convert(m) do
+    m * 3.28084
   end
+end
 
-  defmodule Inch do
-    def convert(m) do
-      m * 39.3701
-    end
+defmodule MeterToLengthConverter.Inch do
+  def convert(m) do
+    m * 39.3701
   end
 end
